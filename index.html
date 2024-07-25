@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+
+        function Home() {
+
+            document.body.innerHTML = ''; // DON'T TOUCH
+
+            setTimeout(function() {
+             const container = document.createElement('div');
+            container.className = '';
+            container.innerHTML = `
+    <div class="tablet">
+        <div class="screen">
+            <h1>Welcome, moderator struuzzo!</h1>
+            <span class="vertical-line"></span>
+            <div class="navbar">
+                <button class="button" onclick="Home()">Home</button>
+                <button class="button" onclick="commands()">Commands</button>   
+                <button class="button">TxAdmin</button> 
+                <button class="button" onclick="rules()">Staff rules</button> 
+                <button class="button" onclick="discordlogs()">Discord logs</button> 
+            </div> 
+        </div>
+    </div>
+    <div class="lastbans">
+        <span class="bans">
+            <h3>PLAYER BANNED</h3>
+            <p>Player banned by staff name for cheating, until 25/7/2030</p>
+            <button class="revoke">Revoke ban</button>
+        </span>
+        <span class="bans">
+            <h3>PLAYER BANNED</h3>
+            <p>Player banned by staff name for cheating, until 25/7/2030</p>
+            <button class="revoke">Revoke ban</button>
+        </span>
+        <span class="bans">
+            <h3>PLAYER BANNED</h3>
+            <p>Player banned by staff name for cheating, until 25/7/2030</p>
+            <button class="revoke">Revoke ban</button>
+        </span>
+    </div>
+     <div class="searchplayer">
+        <h2>SEARCH PLAYER</h2>
+        <h3>Active players:</h3>
+        <h1>1/64</h1>
+        <button class="playerlist" onclick="playerlist()">Player list</button>     
+    </div>
+    </div>
+        
+    `
+    document.body.appendChild(container);
+}, 20);   
+
+        }
+        function rules(){
+        window.location.assign( 
+             "url del regolamento staff"); 
+        }
+
+        function discordlogs(){
+        window.location.assign( 
+             "url del discord"); 
+        }
+
+    function commands() {
+
+    document.body.innerHTML = ''; // DON'T TOUCH
+
+    setTimeout(function() {
+    const container = document.createElement('div');
+    container.className = '';
+    container.innerHTML = `
+            <div class="container">
+                <span class="butt">
+                    <h3>BAN PLAYER</h3>
+                    <p>This function is used to ban a player if he does something wrong.</p>
+                    <button class="banplayer">BAN PLAYER</button>
+                </span>
+                <span class="butt">
+                    <h3>TELEPORT PLAYER</h3>
+                    <p>This function is used to teleport a player if he does something wrong.</p>
+                    <button class="teleport">TELEPORT</button>
+                </span>
+                <span class="butt">
+                    <h3>KICK PLAYER</h3>
+                    <p>This function is used to kick a player if he does something wrong.</p>
+                    <button class="kick">KICK PLAYER</button>
+                </span>
+             <h1 class="title">COMMANDS</h1>
+            <button onclick="Home()" class="goback">GOBACK</button>
+
+        
+    `
+    document.body.appendChild(container);
+}, 20);   
+}
+
+    function playerlist() {
+
+    document.body.innerHTML = ''; // DON'T TOUCH
+
+    setTimeout(function() {
+    const container = document.createElement('div');
+    container.className = '';
+    container.innerHTML = `
+        <div class="mainplayers">
+            <h1>SERVER NAME PLAYER LIST</h1>
+            <button class="gobback" onclick="Home()">🔚</button>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4>
+                <p class="joined">joined in 24/07/2024</p>
+                <button class="banbutton">BAN</button> 
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button>
+            </span>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4> 
+                <p class="joined">joined in 24/07/2024</p>   
+                <button class="banbutton">BAN</button> 
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button>
+            </span>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4>
+                <p class="joined">joined in 24/07/2024</p>
+                <button class="banbutton">BAN</button>
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button> 
+            </span>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4>
+                <p class="joined">joined in 24/07/2024</p>
+                <button class="banbutton">BAN</button> 
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button> 
+            </span>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4> 
+                <p class="joined">joined in 24/07/2024</p>  
+                <button class="banbutton">BAN</button>
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button>   
+            </span>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4>  
+                <p class="joined">joined in 24/07/2024</p>  
+                <button class="banbutton">BAN</button>
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button>  
+            </span>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4>
+                <p class="joined">joined in 24/07/2024</p>
+                <button class="banbutton">BAN</button>
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button>  
+            </span>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4>
+                <p class="joined">joined in 24/07/2024</p>
+                <button class="banbutton">BAN</button>
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button>  
+            </span>
+            <span class="players">
+                <h4 class="playernames">PLAYER NAME</h4>
+                <p class="joined">joined in 24/07/2024</p>
+                <button class="banbutton">BAN</button>
+                <button class="kickbutton">KICK</button> 
+                <button class="healbutton">HEAL</button>
+                <button class="gotobutton">GOTO</button>
+                <button class="bringbutton">BRING</button>  
+            </span>
+        </div>
+    `
+    document.body.appendChild(container);
+    }, 20);   
+}
+</script>
+
+<body>
+    <div class="tablet">
+        <div class="screen">
+            <h1>Welcome, moderator struuzzo!</h1>
+            <span class="vertical-line"></span>
+            <div class="navbar">
+                <button class="button" onclick="Home()">Home</button>
+                <button class="button" onclick="commands()">Commands</button>   
+                <button class="button">TxAdmin</button> 
+                <button class="button" onclick="rules()">Staff rules</button> 
+                <button class="button" onclick="discordlogs()">Discord logs</button> 
+            </div> 
+        </div>
+    </div>
+    <div class="lastbans">
+        <span class="bans">
+            <h3>PLAYER BANNED</h3>
+            <p>Player banned by staff name for cheating, until 25/7/2030</p>
+            <button class="revoke">Revoke ban</button>
+        </span>
+        <span class="bans">
+            <h3>PLAYER BANNED</h3>
+            <p>Player banned by staff name for cheating, until 25/7/2030</p>
+            <button class="revoke">Revoke ban</button>
+        </span>
+        <span class="bans">
+            <h3>PLAYER BANNED</h3>
+            <p>Player banned by staff name for cheating, until 25/7/2030</p>
+            <button class="revoke">Revoke ban</button>
+        </span>
+    </div>
+    <div class="searchplayer">
+        <h2>SEARCH PLAYER</h2>
+        <h3>Active players:</h3>
+        <h1>1/64</h1>
+        <button class="playerlist" onclick="playerlist()">Player list</button>     
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
